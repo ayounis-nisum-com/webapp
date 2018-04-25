@@ -1,0 +1,14 @@
+// Declarative //
+pipeline {
+	agent any
+	
+	stages{
+		satage('Build') {
+			steps{
+				sh "${MAVEN_HOME}/bin/mvn clean package"
+			}
+		}
+		
+	
+	}
+}
